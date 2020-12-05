@@ -18,7 +18,6 @@ namespace BibliotecaComunitaria
         public BibliotecaComunitariaEntities()
             : base("name=BibliotecaComunitariaEntities")
         {
-            this.Configuration.ProxyCreationEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -37,5 +36,6 @@ namespace BibliotecaComunitaria
         public virtual DbSet<Prestamo> Prestamo { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TipoDocumento> TipoDocumento { get; set; }
+        public virtual DbSet<Comentario> Comentario { get; set; }
     }
 }

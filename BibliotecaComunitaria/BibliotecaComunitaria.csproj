@@ -188,6 +188,9 @@
     <Compile Include="Ciudad.cs">
       <DependentUpon>ModelBiblio.tt</DependentUpon>
     </Compile>
+    <Compile Include="Comentario.cs">
+      <DependentUpon>ModelBiblio.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AutoresController.cs" />
     <Compile Include="Controllers\AutorsController.cs" />
