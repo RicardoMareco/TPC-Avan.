@@ -195,6 +195,7 @@
     <Compile Include="Controllers\AutoresController.cs" />
     <Compile Include="Controllers\AutorsController.cs" />
     <Compile Include="Controllers\CiudadsController.cs" />
+    <Compile Include="Controllers\ComentariosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DetallePrestamo.cs">
@@ -327,6 +328,7 @@
     <Content Include="Views\Ciudads\Details.cshtml" />
     <Content Include="Views\Ciudads\Edit.cshtml" />
     <Content Include="Views\Ciudads\Index.cshtml" />
+    <Content Include="Views\Comentarios\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
