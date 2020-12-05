@@ -29,6 +29,7 @@
         <AssociationConnector Association="BibliotecaComunitariaModel.FK_Funcionario_TipoDocumento" ManuallyRouted="false" />
         <AssociationConnector Association="BibliotecaComunitariaModel.FK_Prestador_TipoDocumento" ManuallyRouted="false" />
         <AssociationConnector Association="BibliotecaComunitariaModel.FK_Prestamo_Prestador" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BibliotecaComunitariaModel.Comentario" Width="1.5" PointX="2.75" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

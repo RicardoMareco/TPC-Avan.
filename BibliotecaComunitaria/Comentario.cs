@@ -7,17 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BibliotecaComunitaria.Models
+namespace BibliotecaComunitaria
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class sysdiagrams
+    public partial class Comentario
     {
-        public string name { get; set; }
-        public int principal_id { get; set; }
-        public int diagram_id { get; set; }
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public int ComentarioID { get; set; }
+        public string Mail { get; set; }
+        public string Comentario1 { get; set; }
     }
 }

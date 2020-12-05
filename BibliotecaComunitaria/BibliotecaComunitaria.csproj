@@ -188,8 +188,13 @@
     <Compile Include="Ciudad.cs">
       <DependentUpon>ModelBiblio.tt</DependentUpon>
     </Compile>
+    <Compile Include="Comentario.cs">
+      <DependentUpon>ModelBiblio.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AutoresController.cs" />
+    <Compile Include="Controllers\AutorsController.cs" />
+    <Compile Include="Controllers\CiudadsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DetallePrestamo.cs">
@@ -321,6 +326,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Autors\Index.cshtml" />
+    <Content Include="Views\Ciudads\Create.cshtml" />
+    <Content Include="Views\Ciudads\Delete.cshtml" />
+    <Content Include="Views\Ciudads\Details.cshtml" />
+    <Content Include="Views\Ciudads\Edit.cshtml" />
+    <Content Include="Views\Ciudads\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
