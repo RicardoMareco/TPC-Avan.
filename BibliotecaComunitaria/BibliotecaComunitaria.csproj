@@ -258,6 +258,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\Jazmin.jpg" />
+    <Content Include="Imagenes\Marcos.jpeg" />
+    <Content Include="Imagenes\pablo.jpg" />
+    <Content Include="Imagenes\Ricardo.jpeg" />
+    <Content Include="Imagenes\Sebastian.jpeg" />
     <Content Include="ModelBiblio.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelBiblio.edmx</DependentUpon>
