@@ -1,0 +1,73 @@
+﻿@model BibliotecaComunitaria.Libro
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Libro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edicion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edicion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaPublicacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaPublicacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadEjemplares)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadEjemplares)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadDisponible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadDisponible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor.NombreFantasia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autor.NombreFantasia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Editorial.NombreEditorial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Editorial.NombreEditorial)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Volver", "Index")
+</p>
