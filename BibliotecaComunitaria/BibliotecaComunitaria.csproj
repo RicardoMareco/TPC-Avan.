@@ -223,56 +223,8 @@
       <DependentUpon>ModelBiblio.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Autor.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BibliotecaComunitariaModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BibliotecaComunitariaModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BibliotecaComunitariaModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BibliotecaComunitariaModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BibliotecaComunitariaModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Ciudad.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DetallePrestamo.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Editorial.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Funcionario.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Libro.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Pais.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Prestador.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Prestamo.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TipoDocumento.cs">
-      <DependentUpon>BibliotecaComunitariaModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Pais.cs">
       <DependentUpon>ModelBiblio.tt</DependentUpon>
     </Compile>
@@ -300,6 +252,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\Jazmin.jpg" />
+    <Content Include="Imagenes\Marcos.jpeg" />
+    <Content Include="Imagenes\pablo.jpg" />
+    <Content Include="Imagenes\Ricardo.jpeg" />
+    <Content Include="Imagenes\Sebastian.jpeg" />
     <Content Include="ModelBiblio.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelBiblio.edmx</DependentUpon>
@@ -310,16 +267,6 @@
       <DependentUpon>ModelBiblio.edmx</DependentUpon>
       <LastGenOutput>ModelBiblio.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\BibliotecaComunitariaModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BibliotecaComunitariaModel.edmx</DependentUpon>
-      <LastGenOutput>BibliotecaComunitariaModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\BibliotecaComunitariaModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BibliotecaComunitariaModel.edmx</DependentUpon>
-      <LastGenOutput>BibliotecaComunitariaModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="ModelBiblio.edmx">
@@ -328,13 +275,6 @@
     </EntityDeploy>
     <Content Include="ModelBiblio.edmx.diagram">
       <DependentUpon>ModelBiblio.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\BibliotecaComunitariaModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BibliotecaComunitariaModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\BibliotecaComunitariaModel.edmx.diagram">
-      <DependentUpon>BibliotecaComunitariaModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
