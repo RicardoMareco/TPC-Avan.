@@ -1,0 +1,62 @@
+﻿@model IEnumerable<BibliotecaComunitaria.DetallePrestamo>
+
+@{
+    ViewBag.Title = "Detalle Prestamo";
+}
+
+<h2>Detalle de los Prestamo</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo detalle", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaVencimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaDevolucion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CantidadEjemplares)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Libro.NroDocumento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prestamo.NroDocumento)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaVencimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaDevolucion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CantidadEjemplares)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Libro.NroDocumento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prestamo.NroDocumento)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BibliotecaComunitaria.Prestamo>
+
+@{
+    ViewBag.Title = "Prestamos";
+}
+
+<h2>Prestamos</h2>
+
+<p>
+    @Html.ActionLink("Registrar Prestamo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaPrestamo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaReal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prestador.Nombres)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPrestamo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaReal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prestador.Nombres)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.PrestamoID }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.PrestamoID })
+            </td>
+        </tr>
+    }
+    @Html.ActionLink("Detalle de Prestamos", "Index", "DetallePrestamoes")
+</table>

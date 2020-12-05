@@ -1,0 +1,48 @@
+﻿@model BibliotecaComunitaria.Prestamo
+
+@{
+    ViewBag.Title = "Prestamos";
+}
+
+<h2>Prestamos</h2>
+
+<h3>Realmente desea eliminar esto?</h3>
+<div>
+    <h4>Prestamo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaPrestamo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaPrestamo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaReal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaReal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prestador.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prestador.Nombres)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Volver", "Index")
+        </div>
+    }
+</div>

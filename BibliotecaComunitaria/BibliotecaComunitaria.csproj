@@ -196,9 +196,11 @@
     <Compile Include="Controllers\AutorsController.cs" />
     <Compile Include="Controllers\CiudadsController.cs" />
     <Compile Include="Controllers\ComentariosController.cs" />
+    <Compile Include="Controllers\DetallePrestamoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LibroesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PrestamoesController.cs" />
     <Compile Include="DetallePrestamo.cs">
       <DependentUpon>ModelBiblio.tt</DependentUpon>
     </Compile>
@@ -338,6 +340,14 @@
     <Content Include="Views\Libroes\Create.cshtml" />
     <Content Include="Views\Libroes\Details.cshtml" />
     <Content Include="Views\Libroes\Index.cshtml" />
+    <Content Include="Views\Prestamoes\Create.cshtml" />
+    <Content Include="Views\Prestamoes\Delete.cshtml" />
+    <Content Include="Views\Prestamoes\Edit.cshtml" />
+    <Content Include="Views\Prestamoes\Index.cshtml" />
+    <Content Include="Views\DetallePrestamoes\Create.cshtml" />
+    <Content Include="Views\DetallePrestamoes\Delete.cshtml" />
+    <Content Include="Views\DetallePrestamoes\Edit.cshtml" />
+    <Content Include="Views\DetallePrestamoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

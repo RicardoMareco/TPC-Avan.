@@ -1,0 +1,72 @@
+﻿@model BibliotecaComunitaria.DetallePrestamo
+
+@{
+    ViewBag.Title = "DetallePrestamo";
+}
+
+<h2>DetallePrestamo</h2>
+
+<h3>desea eliminar esto?</h3>
+<div>
+    <h4>DetallePrestamo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaVencimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaVencimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDevolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDevolucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadEjemplares)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadEjemplares)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Libro.NroDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Libro.NroDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prestamo.NroDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prestamo.NroDocumento)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Volver", "Index")
+        </div>
+    }
+</div>
